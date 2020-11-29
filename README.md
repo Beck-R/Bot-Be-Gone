@@ -17,9 +17,7 @@ To all the creators of used third-party modules (listed below)
 
 ## Changelog:
 
-Version 2.0 | Version 2.0 of I guess what I'm calling "Bot-Be-Gone" introduces a significant code overhaul which mainly makes the code significantly more flexible. Currently there is also a dormant function called autobuy() which depending how I feel I may or may not implement. I also made a separate json file for holding user data mainly to make it as user-friendly as it can be. Same goes for the actual product info json. (Shown below)
-
-![enter image description here](https://cdn.discordapp.com/attachments/756610458496139325/781808169541959680/unknown.png)
+Version 2.0 | Version 2.0 of I guess what I'm calling "Bot-Be-Gone" introduces a significant code overhaul which mainly makes the code significantly more flexible. Currently there is also a dormant function called autobuy() which depending how I feel I may or may not implement. I also made a separate json file for holding user data mainly to make it as user-friendly as it can be. Same goes for the actual product info json.
 
 ## Installation/Usage:
 To use this software just clone the github repo and install the third-party python modules listed in the Thanks section(This will be stream-lined when I figure it out). To get started you will need to open the User-Info.json file (Fig 2).

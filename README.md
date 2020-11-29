@@ -40,8 +40,8 @@ please note that it isn't the one you use to login but something along the lines
 
 After you have familiarized yourself with how to write a json file you will need to change the "STORE" object to the store you are buying the product from and enclosed in brackets, this is not super important but it is a good bit of information to have and it makes the output look nice. After this you will want to change the "GPU" object to the name of the product, I will be changing the object to something more universal but it works for now. Then change the "LINK" object to the link of the product you want to scrape **IT IS VERY IMPORTANT FOR THIS TO BE EXACT.** The next thing you need to change is the object "IND" to the class name of the add-to-cart button or availability indicator(Examples below). To find this hit inspect element on the availability indicator on the website and go from there.
  
- 1. product-inventory(Newegg)
- 2. padding:0 8px(Best-Buy)
+ 1. product-inventory (Newegg)
+ 2. padding:0 8px (Best-Buy)
 
 After you have pulled out all you hair figuring that out you need to change the object "TYPE" to the class type of the indicator. Examples include: class_, style, span, etc. Currently the program only supports class_ and style but this will be the first change and soon(Mainly because I'm lazy).  Then the final two things to do is to change the object "SOT" object to the string the availability indicator should return when sold-out and then change the "AT" object to the string the availability indicator should return when the product is available. Congratulations if you made it this far, you are now ready to get your ps5s and graphics cards. **IF YOU NEED ANY HELP MAKE A TICKET UNDER THE ISSUES TAB IN GITHUB (I'M NEW TO GITHUB SO I'M NOT REALLY SURE IF THAT'S HOW IT WORKS)**
 

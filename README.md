@@ -13,6 +13,7 @@ To all the creators of used third-party modules (listed below)
  1. bs4 (Beautiful Soup)
  2. playsound (Playsound)
  3. colorama (Colorama)
+ 4. requests (Requests)
 
 ## Changelog:
 
@@ -27,9 +28,9 @@ To use this software just clone the github repo and install the third-party pyth
 
 The first thing you will need to is change the "EMAIL" object to you gmail, right now I am using the smtplib module and I am not quite sure if it supports other types of email services. The next thing is to change the "PASS" object to you gmail's third party app login password I won't be explaining how to do this because there are plenty of videos online, and I would like to keep this relatively simple. The final thing to do in the User-Info.json is to change the "PEMAIL" object to your cellphone carriers email attached to your phone number (examples listed below), 
 
- 1. txt.att.net(AT&T)
- 2. tmomail.net(T-Mobile)
- 3. vtext.com(Verizon)
+ 1. txt.att.net (AT&T)
+ 2. tmomail.net (T-Mobile)
+ 3. vtext.com (Verizon)
  ETC. ([here](https://20somethingfinance.com/how-to-send-text-messages-sms-via-email-for-free/) is a good website)
 
 please note that it isn't the one you use to login but something along the lines of 111-222-3333@carrieremailhere. Also it only supports SMS but there are MMS emails listed in the website linked too, MMS will be supported in future updates if they provide a decent benefit. Now that you have that sorted you will need to fill in the information for the Product-Info.json file. Before starting I recommend you read up on how to write a json but you should be okay. The first thing to note that by default there are seven arrays, please note that you can have as many as you want just make sure they are named "GPU" and then a number **STARTING FROM ZERO** and incrementally increasing one number at a time. Please make sure that you are retaining the format of the file and also that you place a comma after each array but not after the last one(Example below)

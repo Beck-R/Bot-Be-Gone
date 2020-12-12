@@ -44,4 +44,4 @@ After you have familiarized yourself with how to write a json file you will need
 After you have pulled out all you hair figuring that out you need to change the object "TYPE" to the class type of the indicator. Examples include: class_, style, span, etc. Currently the program only supports class_ and style but this will be the first change and soon(Mainly because I'm lazy).  Then the final two things to do is to change the object "SOT" object to the string the availability indicator should return when sold-out and then change the "AT" object to the string the availability indicator should return when the product is available. Congratulations if you made it this far, you are now ready to get your ps5s and graphics cards. **IF YOU NEED ANY HELP MAKE A TICKET UNDER THE ISSUES TAB IN GITHUB (I'M NEW TO GITHUB SO I'M NOT REALLY SURE IF THAT'S HOW IT WORKS)**
 
 ## BUGS:
-No currently known bugs.
+Possible issue with the if/else statement in the log() funtion. More testing needed

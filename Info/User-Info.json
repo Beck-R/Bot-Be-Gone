@@ -1,0 +1,10 @@
+{
+    "USER-INFO" : [
+        {
+            "EMAIL" : "gmailhere",
+            "PASS" : "password for third party app",
+            "PEMAIL" : "carrieremailhere",
+            "AGENT" : "useragenthere"
+        }
+    ]
+}

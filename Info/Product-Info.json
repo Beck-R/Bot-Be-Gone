@@ -1,0 +1,85 @@
+{
+    "GPU0" : [
+        {
+            "STORE" : "[NEWEGG]",
+            "GPU" : "MSI RTX 3080 X TRIO",
+            "LINK" : "https://www.newegg.com/msi-geforce-rtx-3080-rtx-3080-gaming-x-trio-10g/p/N82E16814137597?Description=rtx%203080&cm_re=rtx_3080-_-14-137-597-_-Product",
+            "IND" : "product-inventory",
+            "TYPE" : "class_",
+            "SOT" : " OUT OF STOCK.",
+            "AT" : "In stock."
+        }
+    ],
+
+    "GPU1" : [
+        {
+            "STORE" : "[NEWEGG]",
+            "GPU" : "ASUS RTX 3080 TUF",
+            "LINK" : "https://www.newegg.com/asus-geforce-rtx-3080-tuf-rtx3080-10g-gaming/p/N82E16814126453?Description=rtx%203080&cm_re=rtx_3080-_-14-126-453-_-Product",
+            "IND" : "product-inventory",
+            "TYPE" : "class_",
+            "SOT" : " OUT OF STOCK.",
+            "AT" : "In stock."
+        }
+    ],
+
+    "GPU2" : [
+        {
+            "STORE" : "[NEWEGG]",
+            "GPU" : "ASUS RTX 3080 ROG STRIX",
+            "LINK" : "https://www.newegg.com/asus-geforce-rtx-3080-rog-strix-rtx3080-o10g-gaming/p/N82E16814126457?Description=rtx%203080&cm_re=rtx_3080-_-14-126-457-_-Product",
+            "IND" : "product-inventory",
+            "TYPE" : "class_",
+            "SOT" : " OUT OF STOCK.",
+            "AT" : "In stock."
+        }
+    ],
+        
+    "GPU3" : [
+        {
+            "STORE" : "[NEWEGG]",
+            "GPU" : "GIGABYTE RTX 3080 AORUS X",
+            "LINK" : "https://www.newegg.com/gigabyte-geforce-rtx-3080-gv-n3080aorus-x-10gd/p/N82E16814932345?Description=rtx%203080&cm_re=rtx_3080-_-14-932-345-_-Product",
+            "IND" : "product-inventory",
+            "TYPE" : "class_",
+            "SOT" : " OUT OF STOCK.",
+            "AT" : "In stock."
+        }
+    ],
+
+    "GPU4" : [
+        {
+            "STORE" : "[NEWEGG]",
+            "GPU" : "ZOTAC RTX 3080",
+            "LINK" : "https://www.newegg.com/zotac-geforce-rtx-3080-zt-a30800d-10p/p/N82E16814500502?Description=rtx%203080&cm_re=rtx_3080-_-14-500-502-_-Product",
+            "IND" : "product-inventory",
+            "TYPE" : "class_",
+            "SOT" : " OUT OF STOCK.",
+            "AT" : "In stock."
+        }
+    ],
+
+    "GPU5" : [
+        {
+            "STORE" : "[BEST-BUY]",
+            "GPU" : "Nvidia RTX 3080 FE",
+            "LINK" : "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+            "IND" : "padding:0 8px",
+            "TYPE" : "style",
+            "SOT" : "Sold Out",
+            "AT" : "Add to Cart"
+        }
+    ],
+    
+    "GPU6" : [
+        {
+            "STORE" : "[BEST-BUY]",
+            "GPU" : "ASUS RTX 3080 ROG STRIX",
+            "LINK" : "https://www.bestbuy.com/site/asus-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-strix-graphics-card-black/6432445.p?skuId=6432445",
+            "IND" : "padding:0 8px",
+            "TYPE" : "style",
+            "SOT" : "Sold Out",
+            "AT" : "Add to Cart"
+        }
+    ]
+}

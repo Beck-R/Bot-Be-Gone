@@ -95,11 +95,11 @@ def log(gpu, link, store, avail, sot, at, cur_time):
     file = open("Log.txt", "a")
 
     if avail == at:
-        file.write("\n" + cur_time + " : " + avail + " : " +
-                    gpu + " : " + link)  
+        file.write(cur_time + " : " + avail + " : " +
+                    gpu + " : " + link + "\n")  
     elif avail != sot or at:
-        file.write("\n" + cur_time + " : " + "ERROR: UNKOWN STR: " + 
-                    avail + " : " + gpu + " : " + link)
+        file.write(cur_time + " : " + "ERROR: UNKOWN STR: " + 
+                    avail + " : " + gpu + " : " + link + "\n" )
     
     file.close()
 

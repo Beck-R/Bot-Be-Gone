@@ -32,7 +32,7 @@ The first thing you will need to is change the "EMAIL" object to you gmail, righ
  
  ETC. ([here](https://20somethingfinance.com/how-to-send-text-messages-sms-via-email-for-free/) is a good website)
 
-The final thing to change the AGENT class to the user agent of you browser. You can do this by simply looking up "My User Agent" and copying the result.
+The final thing to change is the AGENT class to the user agent of you browser. You can do this by simply looking up "My User Agent" and copying the result.
 
 please note that it isn't the one you use to login but something along the lines of 111-222-3333@carrieremailhere. Also it only supports SMS but there are MMS emails listed in the website linked too, MMS will be supported in future updates if they provide a decent benefit. Now that you have that sorted you will need to fill in the information for the Product-Info.json file. Before starting I recommend you read up on how to write a json but you should be okay. The first thing to note that by default there are seven arrays, please note that you can have as many as you want just make sure they are named "GPU" and then a number **STARTING FROM ZERO** and incrementally increasing one number at a time. Please make sure that you are retaining the format of the file and also that you place a comma after each array but not after the last one(Example below)
 

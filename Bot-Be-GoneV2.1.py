@@ -52,7 +52,7 @@ def checker():
             sot = list[i].get("SOT")
             at = list[i].get("AT")
         
-        # bs4 data
+        # bs4 data and error handling
         try:
             page = requests.get(link, headers = headers)
         except requests.ConnectionError:

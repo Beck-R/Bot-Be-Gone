@@ -17,7 +17,7 @@ To all the creators of used third-party modules (listed below)
 
 ## Changelog:
 
-Version 2.1 | Version 2.1 added product availability and error logging. Also made it so you have to put your user agent in the user-info.json
+Version 2.2 | Version 2.2 added extremely basic error handling
 
 ## Installation/Usage:
 To use this software just clone the github repo and install the third-party python modules listed in the Thanks section(This will be stream-lined when I figure it out). To get started you will need to open the User-Info.json file (Fig 2).

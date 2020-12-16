@@ -9,10 +9,10 @@ from colorama import init, Fore, Back, Style
 init()
 
 # loading json file
-product = open("info\\Product-Info.json", "r")
+product = open("Info\\3090-Info.json", "r")
 p_info = product.read()
 p_data = json.loads(p_info)
-user = open("info\\User-Info.json", "r")
+user = open("Info\\User-Info.json", "r")
 u_info = user.read()
 u_data = json.loads(u_info)
 
@@ -53,7 +53,15 @@ def checker():
             at = list[i].get("AT")
         
         # bs4 data
-        page = requests.get(link, headers = headers)
+        try:
+            page = requests.get(link, headers = headers)
+        except requests.ConnectionError:
+            print(cur_time, "::", Fore.RED + "ERROR", Fore.WHITE + "::",
+                "CANT CONNECT TO SERVER")
+            print("---------------------------------------------------------------------")
+            sleep(5)
+            continue
+        
         soup = BeautifulSoup(page.content, 'html.parser')
         if type == "class_":
             avail = soup.find(class_ = ind).text
@@ -63,12 +71,14 @@ def checker():
         # checking product status
         if avail == sot:
             print(cur_time, "::", Fore.BLUE + store, Fore.WHITE +  
-                "(" , num, "/", outof, ")", Fore.CYAN + gpu, Fore.WHITE + "::", Fore.RED + avail)
+                "(" , num, "/", outof, ")", Fore.CYAN + gpu, 
+                Fore.WHITE + "::", Fore.RED + avail)
             print(Fore.WHITE + "---------------------------------------------------------------------")
             print(Style.RESET_ALL)
         elif avail == at:
             print(cur_time, "::", Fore.BLUE + store, Fore.WHITE +  
-                "(" , num, "/", outof, ")", Fore.CYAN + gpu, Fore.WHITE + "::", Fore.GREEN + avail)
+                "(" , num, "/", outof, ")", Fore.CYAN + gpu, 
+                Fore.WHITE + "::", Fore.GREEN + avail)
             print(Fore.WHITE + "---------------------------------------------------------------------")
             print(Style.RESET_ALL)
             msg(gpu, link)
@@ -95,11 +105,11 @@ def log(gpu, link, store, avail, sot, at, cur_time):
     file = open("Log.txt", "a")
 
     if avail == at:
-        file.write(cur_time + " : " + avail + " : " +
-                    gpu + " : " + link + "\n")  
+        file.write("\n" + cur_time + " : " + avail + " : " +
+                    gpu + " : " + link)  
     elif avail != sot or at:
-        file.write(cur_time + " : " + "ERROR: UNKOWN STR: " + 
-                    avail + " : " + gpu + " : " + link + "\n" )
+        file.write("\n" + cur_time + " : " + "ERROR: UNKOWN STR: " + 
+                    avail + " : " + gpu + " : " + link)
     
     file.close()
 

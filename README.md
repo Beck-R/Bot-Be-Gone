@@ -1,5 +1,5 @@
 # Bot-Be-Gone
-Bot-Be-Gone/AvailCheck Version 2.1
+Bot-Be-Gone/AvailCheck Version 2.2
 
 ## Licensing
 **THIS SOFTWARE IS MEANT TO BE OPEN-SOURCE AND FREE TO USE. YOU MAY REDISTRIBUTE WITH OR WITHOUT MODIFICATION, HOWEVER YOU MUST RETAIN THIS LICENSING INFORMATION, GIVE CREDIT TO THE ORIGINAL CREATOR(Beck-R). YOU MAY NOT CHARGE ANY FEE WHEN DISTRIBUTING. YOU MAY NOT USE THIS SOFTWARE INTENDING TO USE IT FOR PROFIT, HOWEVER PERSONAL USE IS FINE. NO DISTRIBUTOR OR CONTRIBUTOR IS LIABLE FOR ANY DAMAGES OF ANY TYPE.**
@@ -17,7 +17,7 @@ To all the creators of used third-party modules (listed below)
 
 ## Changelog:
 
-Version 2.2 | Version 2.2 added extremely basic error handling
+Version 2.2 | Version 2.2 added extremely basic error handling + scrapped logging
 
 ## Installation/Usage:
 To use this software just clone the github repo and install the third-party python modules listed in the Thanks section(This will be stream-lined when I figure it out). To get started you will need to open the User-Info.json file (Fig 2).
@@ -46,4 +46,3 @@ After you have familiarized yourself with how to write a json file you will need
 After you have pulled out all you hair figuring that out you need to change the object "TYPE" to the class type of the indicator. Examples include: class_, style, span, etc. Currently the program only supports class_ and style but this will be the first change and soon(Mainly because I'm lazy).  Then the final two things to do is to change the object "SOT" object to the string the availability indicator should return when sold-out and then change the "AT" object to the string the availability indicator should return when the product is available. Congratulations if you made it this far, you are now ready to get your ps5s and graphics cards. **IF YOU NEED ANY HELP MAKE A TICKET UNDER THE ISSUES TAB IN GITHUB (I'M NEW TO GITHUB SO I'M NOT REALLY SURE IF THAT'S HOW IT WORKS)**
 
 ## BUGS:
-Possible issue with the if/else statement in the log() funtion. More testing needed

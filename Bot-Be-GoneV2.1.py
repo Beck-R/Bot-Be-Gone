@@ -83,13 +83,11 @@ def checker():
             print(Style.RESET_ALL)
             msg(gpu, link)
             send_email(gpu, link)
-            log(gpu, link, store, avail, sot, at, cur_time)
             print(Fore.GREEN + "Sent!") 
             playsound("Alert.mp3")
         elif avail != sot or at:
             playsound("Alert.mp3")
             error_msg(gpu, link)
-            log(gpu, link, store, avail, sot, at, cur_time)
             print(Fore.RED + "ERROR: Unkown STATUS: ", avail)
         
         # incremental counter for json array
@@ -98,20 +96,7 @@ def checker():
             num = 0
 
         sleep(5)
-    return gpu, link, avail, cur_time, sot, at
-
-# wrting to a log file
-def log(gpu, link, store, avail, sot, at, cur_time):
-    file = open("Log.txt", "a")
-
-    if avail == at:
-        file.write("\n" + cur_time + " : " + avail + " : " +
-                    gpu + " : " + link)  
-    elif avail != sot or at:
-        file.write("\n" + cur_time + " : " + "ERROR: UNKOWN STR: " + 
-                    avail + " : " + gpu + " : " + link)
-    
-    file.close()
+    return gpu, link
 
 # sms messaging
 def msg(gpu, link):
